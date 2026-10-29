@@ -1,0 +1,104 @@
+{
+  "records": [
+    {
+      "evidence_id": "EV-001",
+      "question_id": "Q-101",
+      "claim": "TITLE: Zendesk AI Architecture and Suite Overview VENDOR: Zendesk TARGET ENTITY: Zendesk AI Zendesk AI is built natively into Zendesk Support and Suite platforms, utilizing pre-trained machine learning models trained on billions of real customer service interactions. The architecture is split into two core layers: 1. Standard AI: Included in Suite ...",
+      "claim_type": "fact",
+      "source_ref": "DOC-ZD-01",
+      "source_kind": "retrieved_document",
+      "source_detail": "Validated from vendor_doc (DOC-ZD-01)",
+      "credibility": "medium",
+      "recency": "2025-2026",
+      "corroboration": [],
+      "confidence": "medium",
+      "analyst_notes": "Verified against corpus evidence."
+    }
+  ],
+  "rejection_log": [
+    {
+      "question_id": "Q-101",
+      "claim": "TITLE: Zendesk Official Pricing and Add-On Tiers VENDOR: Zendesk SOURCE TYPE: pricing_page TARGET ENTITY: Zendesk AI PRICING STRUCTURE: Zendesk operates on a hybrid per-seat and add-on commercial model: - Suite Team (Entry Tier): $55 per agent/month (billed annually). Includes basic ticketing, email/chat channels, standard pre-built bots, and found...",
+      "source_ref": "DOC-ZD-02",
+      "reason": "Low relevance score (0.00 < 0.4); does not directly answer sub-question 'Q-101'."
+    },
+    {
+      "question_id": "Q-101",
+      "claim": "TITLE: Intercom Fin AI Agent Capabilities & Commercial Model VENDOR: Intercom SOURCE TYPE: pricing_page TARGET ENTITY: Intercom Fin AI COMMERCIAL MODEL AND PRICING: Intercom uses a core seat price combined with a consumption-based pricing model for Fin AI: - Essential Tier: $39 per seat/month (billed annually). Geared toward early-stage companies a...",
+      "source_ref": "DOC-INT-02",
+      "reason": "Low relevance score (0.00 < 0.4); does not directly answer sub-question 'Q-101'."
+    },
+    {
+      "question_id": "Q-201",
+      "claim": "DOCUMENT ID: DOC-ZD-02\nTITLE: Zendesk Official Pricing and Add-On Tiers\nVENDOR: Zendesk\nSOURCE TYPE: pricing_page\nPUBLISHED: 2026-01-10\nTARGET ENTITY: Zendesk AI",
+      "source_ref": "DOC-ZD-02",
+      "reason": "Low relevance score (0.00 < 0.4); does not directly answer sub-question 'Q-201'."
+    },
+    {
+      "question_id": "Q-201",
+      "claim": "PRICING STRUCTURE:\nZendesk operates on a hybrid per-seat and add-on commercial model:\n- Suite Team (Entry Tier): $55 per agent/month (billed annually). Includes basic ticketing, email/chat channels, standard pre-built bots, and foundational intent detection.\n- Suite Growth: $89 per agent/month (bill",
+      "source_ref": "DOC-ZD-02",
+      "reason": "Low relevance score (0.28 < 0.4); does not directly answer sub-question 'Q-201'."
+    },
+    {
+      "question_id": "Q-201",
+      "claim": "ADVANCED AI ADD-ON:\n- Pricing: $50 per agent/month flat add-on fee across Suite Professional and Enterprise tiers.\n- Included in Advanced AI: Autonomous generative bot responses, intent and sentiment suggestions on agent ticket views, intelligent triage rules, and macro suggestions.\n- Enterprise Cus",
+      "source_ref": "DOC-ZD-02",
+      "reason": "Low relevance score (0.00 < 0.4); does not directly answer sub-question 'Q-201'."
+    },
+    {
+      "question_id": "Q-201",
+      "claim": "DOCUMENT ID: DOC-INT-02\nTITLE: Intercom Fin AI Agent Capabilities & Commercial Model\nVENDOR: Intercom\nSOURCE TYPE: pricing_page\nPUBLISHED: 2026-02-01\nTARGET ENTITY: Intercom Fin AI",
+      "source_ref": "DOC-INT-02",
+      "reason": "Low relevance score (0.00 < 0.4); does not directly answer sub-question 'Q-201'."
+    },
+    {
+      "question_id": "Q-201",
+      "claim": "COMMERCIAL MODEL AND PRICING:\nIntercom uses a core seat price combined with a consumption-based pricing model for Fin AI:\n- Essential Tier: $39 per seat/month (billed annually). Geared toward early-stage companies and smaller support desks.\n- Advanced Tier: $99 per seat/month. Includes custom workfl",
+      "source_ref": "DOC-INT-02",
+      "reason": "Low relevance score (0.00 < 0.4); does not directly answer sub-question 'Q-201'."
+    },
+    {
+      "question_id": "Q-201",
+      "claim": "FIN AI RESOLUTION PRICING & PERFORMANCE:\n- Cost per Resolution: Intercom charges a flat fee of $0.99 per successful automated resolution. A resolution is counted only when the customer explicitly confirms the issue was solved or ceases the conversation without escalating to a human agent.\n- Claimed ",
+      "source_ref": "DOC-INT-02",
+      "reason": "Low relevance score (0.00 < 0.4); does not directly answer sub-question 'Q-201'."
+    },
+    {
+      "question_id": "Q-201",
+      "claim": "DOCUMENT ID: DOC-ANA-03\nTITLE: TechOps Field Benchmark: Real-world AI Resolution Metrics and Cost Analysis\nVENDOR: TechOps Advisory\nSOURCE TYPE: analyst_report\nPUBLISHED: 2026-02-10\nTARGET ENTITY: Intercom Fin AI / Multi-vendor Benchmark",
+      "source_ref": "DOC-ANA-03",
+      "reason": "Low relevance score (0.00 < 0.4); does not directly answer sub-question 'Q-201'."
+    },
+    {
+      "question_id": "Q-201",
+      "claim": "EXECUTIVE SUMMARY & INDEPENDENT TEST RESULTS:\nTechOps conducted a rigorous 90-day double-blind evaluation of generative customer support agents across 35,000 live customer interactions in SaaS and fintech environments.",
+      "source_ref": "DOC-ANA-03",
+      "reason": "Low relevance score (0.00 < 0.4); does not directly answer sub-question 'Q-201'."
+    },
+    {
+      "question_id": "Q-201",
+      "claim": "CONTRADICTION ANALYSIS - INTERCOM FIN AI:\n- Official Vendor Marketing Claim (DOC-INT-02): Intercom advertises a 50% automated resolution rate at a fixed consumption cost of $0.99 per resolution.\n- Field Empirical Measurement: In controlled testing against 12,000 real-world inquiries, Fin AI achieved",
+      "source_ref": "DOC-ANA-03",
+      "reason": "Low relevance score (0.00 < 0.4); does not directly answer sub-question 'Q-201'."
+    },
+    {
+      "question_id": "Q-201",
+      "claim": "DOCUMENT ID: DOC-GOR-02\nTITLE: Gorgias Ticket Tiers and Shopify Automation Pricing\nVENDOR: Gorgias\nSOURCE TYPE: pricing_page\nPUBLISHED: 2026-01-15\nTARGET ENTITY: Gorgias",
+      "source_ref": "DOC-GOR-02",
+      "reason": "Low relevance score (0.00 < 0.4); does not directly answer sub-question 'Q-201'."
+    },
+    {
+      "question_id": "Q-201",
+      "claim": "COMMERCIAL PRICING TIERS:\nGorgias charges by ticket volume rather than individual agent seats:\n- Starter: $10/month (billed monthly) or $90/year. Includes 50 billable tickets/month and 3 user seats.\n- Basic: $60/month (billed monthly) or $50/month (annual). Includes 300 tickets/month, unlimited seat",
+      "source_ref": "DOC-GOR-02",
+      "reason": "Low relevance score (0.00 < 0.4); does not directly answer sub-question 'Q-201'."
+    },
+    {
+      "question_id": "Q-201",
+      "claim": "AUTOMATE AI ADD-ON:\n- Priced at $1.00 per automated interaction.\n- E-commerce self-service flows included.",
+      "source_ref": "DOC-GOR-02",
+      "reason": "Low relevance score (0.00 < 0.4); does not directly answer sub-question 'Q-201'."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "verdict": "FAIL",
+  "defects": [
+    {
+      "defect_type": "coverage_gap",
+      "severity": "warning",
+      "location": "Question 'Q-102'",
+      "description": "Planned sub-question 'Q-102' ('Which vendors offer tiered pricing models, and what features are inclu...') has zero supporting evidence.",
+      "targeted_gap_question": "Which vendors offer tiered pricing models, and what features are included at each tier?"
+    },
+    {
+      "defect_type": "coverage_gap",
+      "severity": "warning",
+      "location": "Question 'Q-202'",
+      "description": "Planned sub-question 'Q-202' ('What are the key differentiators among the top three vendors in this m...') has zero supporting evidence.",
+      "targeted_gap_question": "What are the key differentiators among the top three vendors in this market?"
+    },
+    {
+      "defect_type": "coverage_gap",
+      "severity": "warning",
+      "location": "Question 'Q-301'",
+      "description": "Planned sub-question 'Q-301' ('What are the primary architectural features offered by the top vendors...') has zero supporting evidence.",
+      "targeted_gap_question": "What are the primary architectural features offered by the top vendors, and how do they compare in terms of scalability?"
+    },
+    {
+      "defect_type": "coverage_gap",
+      "severity": "critical",
+      "location": "Question 'Q-302'",
+      "description": "Planned sub-question 'Q-302' ('What limitations do these solutions have regarding integration with ex...') has zero supporting evidence.",
+      "targeted_gap_question": "What limitations do these solutions have regarding integration with existing systems?"
+    }
+  ],
+  "targeted_gap_questions": [
+    "What limitations do these solutions have regarding integration with existing systems?"
+  ],
+  "repair_round": 0
+}

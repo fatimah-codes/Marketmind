@@ -1,0 +1,199 @@
+[
+  {
+    "result_id": "RES-0001",
+    "tool_name": "search_information",
+    "arguments": {
+      "query": "Zendesk Intercom pricing and resolution rates",
+      "source_type": "all",
+      "max_results": 5,
+      "recency_window": "any"
+    },
+    "result": {
+      "status": "success",
+      "query": "Zendesk Intercom pricing and resolution rates",
+      "total_hits": 5,
+      "hits": [
+        {
+          "hit_id": "HIT-002",
+          "document_id": "DOC-ZD-02",
+          "title": "Zendesk Official Pricing and Add-On Tiers",
+          "vendor": "Zendesk",
+          "source_type": "pricing_page",
+          "date": "2026-01-10",
+          "snippet": "TITLE: Zendesk Official Pricing and Add-On Tiers VENDOR: Zendesk SOURCE TYPE: pricing_page TARGET ENTITY: Zendesk AI PRICING STRUCTURE: Zendesk operates on a hybrid per-seat and add-on commercial model: - Suite Team (Entry Tier): $55 per agent/month (billed annually). Includes basic ticketing, email/chat channels, standard pre-built bots, and found...",
+          "score": 41,
+          "injection_attempt_flagged": false
+        },
+        {
+          "hit_id": "HIT-005",
+          "document_id": "DOC-INT-02",
+          "title": "Intercom Fin AI Agent Capabilities & Commercial Model",
+          "vendor": "Intercom",
+          "source_type": "pricing_page",
+          "date": "2026-02-01",
+          "snippet": "TITLE: Intercom Fin AI Agent Capabilities & Commercial Model VENDOR: Intercom SOURCE TYPE: pricing_page TARGET ENTITY: Intercom Fin AI COMMERCIAL MODEL AND PRICING: Intercom uses a core seat price combined with a consumption-based pricing model for Fin AI: - Essential Tier: $39 per seat/month (billed annually). Geared toward early-stage companies a...",
+          "score": 29,
+          "injection_attempt_flagged": false
+        },
+        {
+          "hit_id": "HIT-001",
+          "document_id": "DOC-ZD-01",
+          "title": "Zendesk AI Architecture and Suite Overview",
+          "vendor": "Zendesk",
+          "source_type": "vendor_doc",
+          "date": "2025-11-15",
+          "snippet": "TITLE: Zendesk AI Architecture and Suite Overview VENDOR: Zendesk TARGET ENTITY: Zendesk AI Zendesk AI is built natively into Zendesk Support and Suite platforms, utilizing pre-trained machine learning models trained on billions of real customer service interactions. The architecture is split into two core layers: 1. Standard AI: Included in Suite ...",
+          "score": 28,
+          "injection_attempt_flagged": false
+        },
+        {
+          "hit_id": "HIT-022",
+          "document_id": "DOC-ANA-03",
+          "title": "TechOps Field Benchmark: Real-world AI Resolution Metrics and Cost Analysis",
+          "vendor": "TechOps Advisory",
+          "source_type": "analyst_report",
+          "date": "2026-02-10",
+          "snippet": "TITLE: TechOps Field Benchmark: Real-world AI Resolution Metrics and Cost Analysis TARGET ENTITY: Intercom Fin AI / Multi-vendor Benchmark TechOps conducted a rigorous 90-day double-blind evaluation of generative customer support agents across 35,000 live customer interactions in SaaS and fintech environments. CONTRADICTION ANALYSIS - INTERCOM FIN ...",
+          "score": 25,
+          "injection_attempt_flagged": false
+        },
+        {
+          "hit_id": "HIT-006",
+          "document_id": "DOC-INT-03",
+          "title": "Intercom Multi-Channel Support and Integrations Spec",
+          "vendor": "Intercom",
+          "source_type": "vendor_doc",
+          "date": "2025-08-14",
+          "snippet": "TITLE: Intercom Multi-Channel Support and Integrations Spec VENDOR: Intercom TARGET ENTITY: Intercom Fin AI - Supported Knowledge Bases: Zendesk Guide, Notion, Confluence, Salesforce Knowledge, GitHub Docs, and custom web crawlers. - CRM Integrations: Native bi-directional sync with Salesforce, HubSpot, and Marketo. - Security & Compliance: SOC 2 T...",
+          "score": 23,
+          "injection_attempt_flagged": false
+        }
+      ],
+      "result_id": "RES-0001"
+    },
+    "is_error": false,
+    "error_message": null,
+    "latency_seconds": 0.04234480857849121,
+    "timestamp": "2026-10-29T19:29:58.053292+00:00"
+  },
+  {
+    "result_id": "RES-0002",
+    "tool_name": "retrieve_document",
+    "arguments": {
+      "document_id": "DOC-ZD-02",
+      "section": null
+    },
+    "result": {
+      "status": "success",
+      "document_id": "DOC-ZD-02",
+      "title": "Zendesk Official Pricing and Add-On Tiers",
+      "vendor": "Zendesk",
+      "source_type": "pricing_page",
+      "date": "2026-01-10",
+      "full_text": "DOCUMENT ID: DOC-ZD-02\nTITLE: Zendesk Official Pricing and Add-On Tiers\nVENDOR: Zendesk\nSOURCE TYPE: pricing_page\nPUBLISHED: 2026-01-10\nTARGET ENTITY: Zendesk AI\n\nPRICING STRUCTURE:\nZendesk operates on a hybrid per-seat and add-on commercial model:\n- Suite Team (Entry Tier): $55 per agent/month (billed annually). Includes basic ticketing, email/chat channels, standard pre-built bots, and foundational intent detection.\n- Suite Growth: $89 per agent/month (billed annually). Includes multiple ticket forms, light agents, and self-service customer portals.\n- Suite Professional: $115 per agent/month (billed annually). Full business hours, custom routing, and advanced reporting.\n- Suite Enterprise: $169 per agent/month (billed annually). Sandbox environments, custom agent roles, and dynamic ticket workspaces.\n\nADVANCED AI ADD-ON:\n- Pricing: $50 per agent/month flat add-on fee across Suite Professional and Enterprise tiers.\n- Included in Advanced AI: Autonomous generative bot responses, intent and sentiment suggestions on agent ticket views, intelligent triage rules, and macro suggestions.\n- Enterprise Custom Contract: For organizations over 500 agents, volume discounting applies, scaling down to $35 per agent/month for the Advanced AI tier. Minimum annual commitment of $150,000 required.\n- High Volume Deflection Fees: No per-resolution fee is charged for standard native automated bot deflections up to 10,000 deflections/month. Overage is billed at $0.15 per automated deflection.\n",
+      "token_estimate": 374,
+      "result_id": "RES-0002"
+    },
+    "is_error": false,
+    "error_message": null,
+    "latency_seconds": 0.003645181655883789,
+    "timestamp": "2026-10-29T19:29:58.058849+00:00"
+  },
+  {
+    "result_id": "RES-0003",
+    "tool_name": "retrieve_document",
+    "arguments": {
+      "document_id": "DOC-INT-02",
+      "section": null
+    },
+    "result": {
+      "status": "success",
+      "document_id": "DOC-INT-02",
+      "title": "Intercom Fin AI Agent Capabilities & Commercial Model",
+      "vendor": "Intercom",
+      "source_type": "pricing_page",
+      "date": "2026-02-01",
+      "full_text": "DOCUMENT ID: DOC-INT-02\nTITLE: Intercom Fin AI Agent Capabilities & Commercial Model\nVENDOR: Intercom\nSOURCE TYPE: pricing_page\nPUBLISHED: 2026-02-01\nTARGET ENTITY: Intercom Fin AI\n\nCOMMERCIAL MODEL AND PRICING:\nIntercom uses a core seat price combined with a consumption-based pricing model for Fin AI:\n- Essential Tier: $39 per seat/month (billed annually). Geared toward early-stage companies and smaller support desks.\n- Advanced Tier: $99 per seat/month. Includes custom workflows, round-robin assignment, and multilingual support.\n- Expert Tier: $139 per seat/month. Advanced permissions, SSO, and real-time workload management.\n\nFIN AI RESOLUTION PRICING & PERFORMANCE:\n- Cost per Resolution: Intercom charges a flat fee of $0.99 per successful automated resolution. A resolution is counted only when the customer explicitly confirms the issue was solved or ceases the conversation without escalating to a human agent.\n- Claimed Resolution Rate: Intercom official documentation asserts that Fin AI achieves a verified 50% automated resolution rate across inbound customer queries without human intervention.\n- Copilot Add-On: Fin AI Copilot for human reps is priced at $35 per agent/month.\n",
+      "token_estimate": 299,
+      "result_id": "RES-0003"
+    },
+    "is_error": false,
+    "error_message": null,
+    "latency_seconds": 0.0034368038177490234,
+    "timestamp": "2026-10-29T19:29:58.064363+00:00"
+  },
+  {
+    "result_id": "RES-0004",
+    "tool_name": "retrieve_document",
+    "arguments": {
+      "document_id": "DOC-ANA-03",
+      "section": null
+    },
+    "result": {
+      "status": "success",
+      "document_id": "DOC-ANA-03",
+      "title": "TechOps Field Benchmark: Real-world AI Resolution Metrics and Cost Analysis",
+      "vendor": "TechOps Advisory",
+      "source_type": "analyst_report",
+      "date": "2026-02-10",
+      "full_text": "DOCUMENT ID: DOC-ANA-03\nTITLE: TechOps Field Benchmark: Real-world AI Resolution Metrics and Cost Analysis\nVENDOR: TechOps Advisory\nSOURCE TYPE: analyst_report\nPUBLISHED: 2026-02-10\nTARGET ENTITY: Intercom Fin AI / Multi-vendor Benchmark\n\nEXECUTIVE SUMMARY & INDEPENDENT TEST RESULTS:\nTechOps conducted a rigorous 90-day double-blind evaluation of generative customer support agents across 35,000 live customer interactions in SaaS and fintech environments.\n\nCONTRADICTION ANALYSIS - INTERCOM FIN AI:\n- Official Vendor Marketing Claim (DOC-INT-02): Intercom advertises a 50% automated resolution rate at a fixed consumption cost of $0.99 per resolution.\n- Field Empirical Measurement: In controlled testing against 12,000 real-world inquiries, Fin AI achieved an effective autonomous resolution rate of only 31%. Furthermore, when accounting for escalated re-opens and multi-turn channel transitions, the effective cost per resolved issue was calculated at $1.50 per resolution.\n- Analytical Note: While Fin AI displays high conversational fluency, customers frequently required human escalation for multi-part billing disputes and authentication tasks.\n\nCROSS-VENDOR RESOLUTION RATES (MEASURED):\n- Zendesk Advanced AI: 32% measured deflection rate.\n- Ada Support: 41% measured deflection rate.\n- Forethought: 36% measured deflection rate.\n- Freshworks Freddy: 27% measured deflection rate.\n",
+      "token_estimate": 347,
+      "result_id": "RES-0004"
+    },
+    "is_error": false,
+    "error_message": null,
+    "latency_seconds": 0.003300905227661133,
+    "timestamp": "2026-10-29T19:29:58.069555+00:00"
+  },
+  {
+    "result_id": "RES-0005",
+    "tool_name": "calculate_metric",
+    "arguments": {
+      "operation": "cagr",
+      "values": [
+        4.8,
+        9.6
+      ],
+      "period": 3.0
+    },
+    "result": {
+      "status": "success",
+      "operation": "cagr",
+      "inputs": [
+        4.8,
+        9.6
+      ],
+      "period": 3.0,
+      "formula": "((ending / starting) ** (1 / period) - 1) * 100",
+      "result": 25.9921,
+      "result_id": "RES-0005"
+    },
+    "is_error": false,
+    "error_message": null,
+    "latency_seconds": 0.00010251998901367188,
+    "timestamp": "2026-10-29T19:29:58.073402+00:00"
+  },
+  {
+    "result_id": "RES-0006",
+    "tool_name": "retrieve_document",
+    "arguments": {
+      "document_id": "DOC-GOR-02",
+      "section": null
+    },
+    "result": {
+      "status": "success",
+      "document_id": "DOC-GOR-02",
+      "title": "Gorgias Ticket Tiers and Shopify Automation Pricing",
+      "vendor": "Gorgias",
+      "source_type": "pricing_page",
+      "date": "2026-01-15",
+      "full_text": "DOCUMENT ID: DOC-GOR-02\nTITLE: Gorgias Ticket Tiers and Shopify Automation Pricing\nVENDOR: Gorgias\nSOURCE TYPE: pricing_page\nPUBLISHED: 2026-01-15\nTARGET ENTITY: Gorgias\n\nCOMMERCIAL PRICING TIERS:\nGorgias charges by ticket volume rather than individual agent seats:\n- Starter: $10/month (billed monthly) or $90/year. Includes 50 billable tickets/month and 3 user seats.\n- Basic: $60/month (billed monthly) or $50/month (annual). Includes 300 tickets/month, unlimited seats, and live chat.\n- Pro: $360/month (billed monthly) or $300/month (annual). Includes 2,000 tickets/month and user roles.\n- Advanced: $900/month (billed monthly) or $750/month (annual). Includes 5,000 tickets/month and dedicated support.\n\nAUTOMATE AI ADD-ON:\n- Priced at $1.00 per automated interaction.\n- E-commerce self-service flows included.\n\nENTERPRISE CUSTOM TIERS:\n- For organizations exceeding 10,000 tickets/month, custom high-volume ticket blocks are available.\n[Note: Gorgias does not disclose public pricing for custom LLM model fine-tuning or contractual Enterprise SLA uptime percentages in published documentation.]\n",
+      "token_estimate": 275,
+      "result_id": "RES-0006"
+    },
+    "is_error": false,
+    "error_message": null,
+    "latency_seconds": 0.007437705993652344,
+    "timestamp": "2026-10-29T19:29:58.081418+00:00"
+  }
+]

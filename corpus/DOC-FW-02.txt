@@ -1,0 +1,18 @@
+DOCUMENT ID: DOC-FW-02
+TITLE: Freshworks Freddy AI Pricing and Session Packaging
+VENDOR: Freshworks
+SOURCE TYPE: pricing_page
+PUBLISHED: 2026-01-20
+TARGET ENTITY: Freshworks Freddy AI
+
+PRICING MODEL:
+Freshdesk offers per-agent subscription plans plus consumption packs for Freddy AI:
+- Free Tier: Up to 10 agents with basic email ticketing (no AI).
+- Growth Tier: $15 per agent/month (billed annually). Includes basic automations and standard marketplace apps.
+- Pro Tier: $49 per agent/month (billed annually). Includes round-robin routing, SLA management, and multilingual knowledge base.
+- Enterprise Tier: $79 per agent/month (billed annually). Advanced skill-based routing and sandbox.
+
+FREDDY AI ADD-ON & SESSIONS:
+- Freddy Copilot: $29 per agent/month add-on fee for Pro and Enterprise tiers.
+- Freddy Self-Service Sessions: 500 free Freddy Self-Service bot sessions are included with Pro and Enterprise plans.
+- Additional Bot Sessions: Sold in packs of 1,000 sessions for $100 (equating to $0.10 per bot conversation session).

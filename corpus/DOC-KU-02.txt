@@ -1,0 +1,11 @@
+DOCUMENT ID: DOC-KU-02
+TITLE: Kustomer Enterprise Seat and Deflection Pricing
+VENDOR: Kustomer
+SOURCE TYPE: pricing_page
+PUBLISHED: 2025-10-25
+TARGET ENTITY: Kustomer KIQ
+
+PRICING MODEL:
+- Enterprise Tier: $89 per user/month (annual commitment). Includes core CRM, unified routing, and standard standard conversational bots.
+- Ultimate Tier: $139 per user/month. Includes advanced workforce management, real-time routing algorithms, and sandbox access.
+- KIQ Conversation Deflection: $0.75 per successful conversation deflection powered by KIQ bot.

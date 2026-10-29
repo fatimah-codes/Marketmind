@@ -1,0 +1,12 @@
+DOCUMENT ID: DOC-SF-01
+TITLE: Salesforce Service Cloud Einstein 1 Architecture Spec
+VENDOR: Salesforce
+SOURCE TYPE: vendor_doc
+PUBLISHED: 2025-11-30
+TARGET ENTITY: Salesforce Service Cloud Einstein
+
+ARCHITECTURE & EINSTEIN 1 PLATFORM:
+Salesforce Service Cloud integrates AI through Einstein 1 Platform and Agentforce Service Agents:
+- Einstein Trust Layer: Enterprise security layer enforcing zero data retention with LLM vendors, dynamic masking of PII (personally identifiable information), toxicity detection, and audit logging of generated text.
+- Agentforce Autonomous Agents: Autonomous reasoning agents capable of performing complex transactional multi-step workflows (issuing refunds, updating shipping addresses, rebooking orders) directly within Salesforce Data Cloud.
+- Service Copilot: Provides real-time conversation summarization, next best actions, and automated email response drafting.

@@ -1,0 +1,12 @@
+DOCUMENT ID: DOC-ADA-01
+TITLE: Ada Support Automated Reasoning Engine Technical Brief
+VENDOR: Ada
+SOURCE TYPE: vendor_doc
+PUBLISHED: 2025-10-18
+TARGET ENTITY: Ada Support
+
+ARCHITECTURE:
+Ada is an AI-first customer service platform designed for automated resolution across messaging, voice, and email:
+- Reasoning Engine: Utilizes multi-model orchestration with task-specific models for intent classification, RAG lookup, and conversational synthesis.
+- Zero-Training Launch: Ingests brand documentation, Help Centers, and CRM databases without requiring manual decision-tree design.
+- Voice AI: Supports sub-second latency speech-to-speech telephony customer support with bi-directional interruptions.

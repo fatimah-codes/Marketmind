@@ -1,0 +1,17 @@
+DOCUMENT ID: DOC-ZD-01
+TITLE: Zendesk AI Architecture and Suite Overview
+VENDOR: Zendesk
+SOURCE TYPE: vendor_doc
+PUBLISHED: 2025-11-15
+TARGET ENTITY: Zendesk AI
+
+OVERVIEW:
+Zendesk AI is built natively into Zendesk Support and Suite platforms, utilizing pre-trained machine learning models trained on billions of real customer service interactions. The architecture is split into two core layers:
+1. Standard AI: Included in Suite plans, offering foundational intent classification, language detection, and intelligent sentiment routing.
+2. Advanced AI Add-on: An enterprise-grade enhancement offering generative AI agent replies, macro suggestions, conversational bots with reasoning capabilities, and automated quality assurance.
+
+ARCHITECTURAL SPECIFICATIONS:
+- Model Foundation: Proprietary classification transformers combined with OpenAI LLM endpoints for generative synthesis and agent assistance.
+- Omnichannel Support: Email, Web Widget, Mobile SDK, Messaging (WhatsApp, SMS, Slack, Instagram Direct), and Voice transcription.
+- Data Privacy: Zendesk does not use customer service ticket data to train external public LLMs. Zero-data retention agreements are maintained with underlying model providers.
+- Workflow Automation: Automated ticket triage routes tickets based on predicted urgency, CSAT sentiment score, and 120+ pre-built industry intent buckets.

@@ -1,0 +1,109 @@
+{
+  "plan_id": "plan-94d6ad",
+  "target_entity_type": "AI Customer Support Platforms",
+  "objectives": [
+    {
+      "objective_id": "OBJ-1",
+      "title": "Vendor Identification & Market Landscape",
+      "description": "Identify market leaders, emerging entrants, and core architectural approaches.",
+      "sub_questions": [
+        {
+          "question_id": "Q-101",
+          "question_text": "Which vendors lead the AI-powered customer support category?",
+          "required_evidence_type": "analyst_note",
+          "candidate_tools": [
+            "search_information",
+            "retrieve_document"
+          ],
+          "priority": "critical",
+          "status": "answered",
+          "resolution_notes": "Answered with 1 verified evidence records."
+        },
+        {
+          "question_id": "Q-102",
+          "question_text": "What are the primary architectural approaches (autonomous agents vs copilot copilots)?",
+          "required_evidence_type": "vendor_doc",
+          "candidate_tools": [
+            "search_information",
+            "retrieve_document"
+          ],
+          "priority": "high",
+          "status": "unanswerable",
+          "resolution_notes": "Model produced no tool calls for ungrounded question."
+        }
+      ]
+    },
+    {
+      "objective_id": "OBJ-2",
+      "title": "Commercial Models and Pricing Structure",
+      "description": "Establish published per-seat, resolution-based, and enterprise licensing models.",
+      "sub_questions": [
+        {
+          "question_id": "Q-201",
+          "question_text": "Which vendors publish per-seat entry pricing, and what are the specific tiers?",
+          "required_evidence_type": "pricing_table",
+          "candidate_tools": [
+            "search_information",
+            "retrieve_document"
+          ],
+          "priority": "critical",
+          "status": "unanswerable",
+          "resolution_notes": "Model produced no tool calls for ungrounded question."
+        },
+        {
+          "question_id": "Q-202",
+          "question_text": "How do consumption or per-resolution pricing models compare across vendors?",
+          "required_evidence_type": "pricing_table",
+          "candidate_tools": [
+            "search_information",
+            "retrieve_document",
+            "calculate_metric"
+          ],
+          "priority": "high",
+          "status": "unanswerable",
+          "resolution_notes": "Model produced no tool calls for ungrounded question."
+        }
+      ]
+    },
+    {
+      "objective_id": "OBJ-3",
+      "title": "Feature Differentiation & Limitations",
+      "description": "Evaluate automated resolution metrics, channel integrations, and verified gaps.",
+      "sub_questions": [
+        {
+          "question_id": "Q-301",
+          "question_text": "What verified resolution rates and SLA commitments are published by leading vendors?",
+          "required_evidence_type": "independent_benchmark",
+          "candidate_tools": [
+            "search_information",
+            "retrieve_document",
+            "compare_companies"
+          ],
+          "priority": "high",
+          "status": "unanswerable",
+          "resolution_notes": "Model produced no tool calls for ungrounded question."
+        },
+        {
+          "question_id": "Q-302",
+          "question_text": "What enterprise custom fine-tuning or SLA tiers remain unestablished or undisclosed?",
+          "required_evidence_type": "vendor_doc",
+          "candidate_tools": [
+            "search_information",
+            "retrieve_document"
+          ],
+          "priority": "medium",
+          "status": "unanswerable",
+          "resolution_notes": "Model produced no tool calls for ungrounded question."
+        }
+      ]
+    }
+  ],
+  "candidate_tools": [
+    "search_information",
+    "retrieve_document",
+    "calculate_metric",
+    "compare_companies",
+    "save_research"
+  ],
+  "created_at": "2026-10-29T19:29:58.009393+00:00"
+}

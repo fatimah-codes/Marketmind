@@ -1,0 +1,21 @@
+DOCUMENT ID: DOC-GOR-02
+TITLE: Gorgias Ticket Tiers and Shopify Automation Pricing
+VENDOR: Gorgias
+SOURCE TYPE: pricing_page
+PUBLISHED: 2026-01-15
+TARGET ENTITY: Gorgias
+
+COMMERCIAL PRICING TIERS:
+Gorgias charges by ticket volume rather than individual agent seats:
+- Starter: $10/month (billed monthly) or $90/year. Includes 50 billable tickets/month and 3 user seats.
+- Basic: $60/month (billed monthly) or $50/month (annual). Includes 300 tickets/month, unlimited seats, and live chat.
+- Pro: $360/month (billed monthly) or $300/month (annual). Includes 2,000 tickets/month and user roles.
+- Advanced: $900/month (billed monthly) or $750/month (annual). Includes 5,000 tickets/month and dedicated support.
+
+AUTOMATE AI ADD-ON:
+- Priced at $1.00 per automated interaction.
+- E-commerce self-service flows included.
+
+ENTERPRISE CUSTOM TIERS:
+- For organizations exceeding 10,000 tickets/month, custom high-volume ticket blocks are available.
+[Note: Gorgias does not disclose public pricing for custom LLM model fine-tuning or contractual Enterprise SLA uptime percentages in published documentation.]

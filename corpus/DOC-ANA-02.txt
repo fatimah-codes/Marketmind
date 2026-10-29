@@ -1,0 +1,14 @@
+DOCUMENT ID: DOC-ANA-02
+TITLE: Forrester Wave: Conversational AI For Customer Service
+VENDOR: Industry Analyst
+SOURCE TYPE: analyst_report
+PUBLISHED: 2025-12-18
+TARGET ENTITY: Market Overview
+
+KEY CRITERIA:
+Platforms were evaluated on RAG integration fidelity, guardrails against hallucination, agent handoff transparency, and total cost predictability.
+
+NOTABLE FINDINGS:
+- Architecture Shift: Over 72% of surveyed enterprise contact centers are shifting from rigid dialog flows to hybrid LLM reasoning agents grounded in internal knowledge bases.
+- Vendor Differentiation: Pure-play AI engines (Ada, Forethought) deliver higher initial deflection rates (35-45%), while platform suites (Salesforce, Zendesk, Freshworks) provide lower integration friction and consolidated audit logging.
+- Buyer Pain Points: 64% of procurement leaders cite unpredictable consumption charges (per-resolution or per-credit pricing) as the primary inhibitor to scaling autonomous AI agents.

@@ -1,0 +1,12 @@
+DOCUMENT ID: DOC-ZD-03
+TITLE: Zendesk Advanced AI Performance and Intent Classification Whitepaper
+VENDOR: Zendesk
+SOURCE TYPE: vendor_doc
+PUBLISHED: 2025-09-20
+TARGET ENTITY: Zendesk AI
+
+PERFORMANCE METRICS:
+- Intent Detection Accuracy: 88.4% top-1 classification accuracy across standard retail, fintech, and SaaS service inquiries.
+- Deflection Rate: Internal customer telemetry indicates an average deflection rate of 34% for tier-1 repetitive questions (order status, password resets, returns).
+- First Contact Resolution (FCR): Human agents leveraging generative suggested replies demonstrated a 28% increase in first-contact resolutions.
+- SLA Compliance: Automated triage reduced average ticket assignment time from 42 minutes to 1.8 minutes.

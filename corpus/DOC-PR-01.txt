@@ -1,0 +1,14 @@
+DOCUMENT ID: DOC-PR-01
+TITLE: Press Release: Global B2B Customer Support AI Spending Surges to $4.8B
+VENDOR: MarketWire
+SOURCE TYPE: press_release
+PUBLISHED: 2026-02-05
+TARGET ENTITY: Market Overview
+
+MARKET SIZING AND SPEND PROJECTIONS:
+SAN FRANCISCO, CA — Enterprise spending on AI-powered customer service and contact center automation reached $4.8 billion in 2025, up 34% year-over-year from $3.58 billion in 2024.
+
+KEY PROJECTIONS:
+- By 2028, total market spend on AI customer support platforms is projected by IDC to reach $9.6 billion, representing a Compound Annual Growth Rate (CAGR) of 26.0%.
+- Mid-market companies (100–1,000 employees) represent the fastest-growing segment, expanding their AI support investments by 48% annually.
+- Hybrid pricing models combining agent seat licensing with consumption/resolution charges now represent 58% of new vendor contracts signed in 2025.

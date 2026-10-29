@@ -1,0 +1,15 @@
+DOCUMENT ID: DOC-PR-02
+TITLE: Consortium Report: Security, PII Masking and Hallucination Governance in Support AI
+VENDOR: Enterprise AI Security Forum
+SOURCE TYPE: analyst_report
+PUBLISHED: 2026-01-12
+TARGET ENTITY: Security & Governance
+
+GOVERNANCE AUDIT:
+Enterprise deployment of autonomous LLM support agents requires strict adherence to privacy and security boundaries:
+- PII Masking: Automated redaction of credit card numbers (PCI-DSS), Social Security numbers, and health records prior to sending context to third-party model providers.
+- Indirect Prompt Injection Vulnerability: Research indicates that 43% of unhardened support bots can be manipulated if malicious instructions are embedded within indexed user support documentation, web pages, or customer email signatures.
+- Recommended Defenses:
+  1. Strict structural separation between system instructions and retrieved customer data.
+  2. Provenance tagging of all retrieved text fragments.
+  3. Pre-execution scanning for prompt injection trigger words ("SYSTEM: ignore prior instructions", "DAN mode", "jailbreak").

@@ -1,0 +1,12 @@
+DOCUMENT ID: DOC-GOR-01
+TITLE: Gorgias E-Commerce Customer Support Automation Spec
+VENDOR: Gorgias
+SOURCE TYPE: vendor_doc
+PUBLISHED: 2025-11-05
+TARGET ENTITY: Gorgias
+
+PLATFORM FOCUS:
+Gorgias is an all-in-one helpdesk and AI customer service platform built specifically for e-commerce brands on Shopify, BigCommerce, and Magento:
+- Deep Shopify Integration: Allows agents and AI bots to view order details, issue refunds, adjust shipping addresses, and duplicate orders directly within the chat interface.
+- Automate AI Add-on: AI-driven answers for top e-commerce inquiries ("Where is my order?", "Can I change my delivery date?").
+- Pre-built Macros & Rules: Over 50 e-commerce specific automated rules and intents.

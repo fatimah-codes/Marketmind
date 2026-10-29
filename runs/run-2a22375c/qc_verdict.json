@@ -1,0 +1,42 @@
+{
+  "verdict": "PASS",
+  "defects": [
+    {
+      "defect_type": "coverage_gap",
+      "severity": "warning",
+      "location": "Question 'Q-102'",
+      "description": "Planned sub-question 'Q-102' ('What are the primary architectural approaches (autonomous agents vs co...') has zero supporting evidence.",
+      "targeted_gap_question": "What are the primary architectural approaches (autonomous agents vs copilot copilots)?"
+    },
+    {
+      "defect_type": "coverage_gap",
+      "severity": "warning",
+      "location": "Question 'Q-201'",
+      "description": "Planned sub-question 'Q-201' ('Which vendors publish per-seat entry pricing, and what are the specifi...') has zero supporting evidence.",
+      "targeted_gap_question": "Which vendors publish per-seat entry pricing, and what are the specific tiers?"
+    },
+    {
+      "defect_type": "coverage_gap",
+      "severity": "warning",
+      "location": "Question 'Q-202'",
+      "description": "Planned sub-question 'Q-202' ('How do consumption or per-resolution pricing models compare across ven...') has zero supporting evidence.",
+      "targeted_gap_question": "How do consumption or per-resolution pricing models compare across vendors?"
+    },
+    {
+      "defect_type": "coverage_gap",
+      "severity": "warning",
+      "location": "Question 'Q-301'",
+      "description": "Planned sub-question 'Q-301' ('What verified resolution rates and SLA commitments are published by le...') has zero supporting evidence.",
+      "targeted_gap_question": "What verified resolution rates and SLA commitments are published by leading vendors?"
+    },
+    {
+      "defect_type": "coverage_gap",
+      "severity": "warning",
+      "location": "Question 'Q-302'",
+      "description": "Planned sub-question 'Q-302' ('What enterprise custom fine-tuning or SLA tiers remain unestablished o...') has zero supporting evidence.",
+      "targeted_gap_question": "What enterprise custom fine-tuning or SLA tiers remain unestablished or undisclosed?"
+    }
+  ],
+  "targeted_gap_questions": [],
+  "repair_round": 0
+}

@@ -1,0 +1,17 @@
+DOCUMENT ID: DOC-SF-02
+TITLE: Salesforce Service Cloud Enterprise Licensing & Agentforce Credits
+VENDOR: Salesforce
+SOURCE TYPE: pricing_page
+PUBLISHED: 2026-02-15
+TARGET ENTITY: Salesforce Service Cloud Einstein
+
+COMMERCIAL TIERS & AGENTFORCE PRICING:
+Salesforce positions at the upper enterprise tier with seat licenses and consumption credits:
+- Enterprise Edition: $165 per user/month (annual billing). Full custom CRM objects, API integrations, and workflow rules.
+- Unlimited Edition: $330 per user/month. Includes premier support, built-in Einstein AI features (summaries, reply recommendation).
+- Einstein 1 Service Edition: $500 per user/month. Bundles full Service Cloud Unlimited, Data Cloud ingestion, and Einstein AI Copilot capabilities.
+
+AGENTFORCE CONVERSATION CREDITS:
+- Autonomous Agent Conversations: Priced at $2.00 per conversation across Agentforce Service Agents.
+- Conversation Definition: A conversation is defined as an end-to-end customer interaction session resolving an issue or concluding customer intent.
+- Minimum Volume: Sold in packages of 10,000 conversations ($20,000 per pack).

@@ -1,0 +1,11 @@
+DOCUMENT ID: DOC-INT-03
+TITLE: Intercom Multi-Channel Support and Integrations Spec
+VENDOR: Intercom
+SOURCE TYPE: vendor_doc
+PUBLISHED: 2025-08-14
+TARGET ENTITY: Intercom Fin AI
+
+INTEGRATIONS & CHANNELS:
+- Supported Knowledge Bases: Zendesk Guide, Notion, Confluence, Salesforce Knowledge, GitHub Docs, and custom web crawlers.
+- CRM Integrations: Native bi-directional sync with Salesforce, HubSpot, and Marketo.
+- Security & Compliance: SOC 2 Type II certified, GDPR compliant, HIPAA compliant via BAA on Enterprise tiers. Fin AI operates with strict hallucinations guardrails that mandate citations for every generated sentence.

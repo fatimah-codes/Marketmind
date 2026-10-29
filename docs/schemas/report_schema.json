@@ -1,0 +1,487 @@
+{
+  "$defs": {
+    "ApprovalDecision": {
+      "description": "The four distinct human-in-the-loop approval outcomes (Section 3.2, Task 09).",
+      "enum": [
+        "approve",
+        "reject",
+        "request_additional_research",
+        "modify_scope"
+      ],
+      "title": "ApprovalDecision",
+      "type": "string"
+    },
+    "ApprovalRecord": {
+      "additionalProperties": false,
+      "description": "Immutable audit record signed by a named human reviewer.",
+      "properties": {
+        "approver_id": {
+          "description": "Corporate identity or email of the reviewer (e.g. 'analyst@verity.com')",
+          "title": "Approver Id",
+          "type": "string"
+        },
+        "decision": {
+          "$ref": "#/$defs/ApprovalDecision",
+          "description": "Explicit decision taken at the gate"
+        },
+        "timestamp": {
+          "title": "Timestamp",
+          "type": "string"
+        },
+        "notes": {
+          "description": "Justification, scope directives, or rejection reasons",
+          "title": "Notes",
+          "type": "string"
+        }
+      },
+      "required": [
+        "approver_id",
+        "decision",
+        "notes"
+      ],
+      "title": "ApprovalRecord",
+      "type": "object"
+    },
+    "ClaimType": {
+      "description": "Epistemic typing for claims. Enforces epistemic boundaries.\nPrevents inference laundering.",
+      "enum": [
+        "fact",
+        "inference",
+        "recommendation",
+        "uncertainty"
+      ],
+      "title": "ClaimType",
+      "type": "string"
+    },
+    "CompetitorAnalysis": {
+      "additionalProperties": false,
+      "description": "Structured entity comparison and per-entity narrative.",
+      "properties": {
+        "entities": {
+          "description": "List of vendor/product names compared",
+          "items": {
+            "type": "string"
+          },
+          "title": "Entities",
+          "type": "array"
+        },
+        "attributes": {
+          "description": "List of attributes compared",
+          "items": {
+            "type": "string"
+          },
+          "title": "Attributes",
+          "type": "array"
+        },
+        "matrix": {
+          "additionalProperties": {
+            "additionalProperties": {
+              "$ref": "#/$defs/CompetitorMatrixCell"
+            },
+            "type": "object"
+          },
+          "description": "entity -> attribute -> cell mapping",
+          "title": "Matrix",
+          "type": "object"
+        },
+        "per_entity_narrative": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Analytical summary for each vendor",
+          "title": "Per Entity Narrative",
+          "type": "object"
+        }
+      },
+      "required": [
+        "entities",
+        "attributes",
+        "matrix"
+      ],
+      "title": "CompetitorAnalysis",
+      "type": "object"
+    },
+    "CompetitorMatrixCell": {
+      "additionalProperties": false,
+      "description": "Cell in the entity x attribute comparison matrix.",
+      "properties": {
+        "value": {
+          "description": "Attribute value, or 'NOT_ESTABLISHED' if unknown",
+          "title": "Value",
+          "type": "string"
+        },
+        "is_established": {
+          "description": "True if supported by empirical corpus evidence",
+          "title": "Is Established",
+          "type": "boolean"
+        },
+        "evidence_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Resolving evidence ID if established",
+          "title": "Evidence Id"
+        }
+      },
+      "required": [
+        "value",
+        "is_established"
+      ],
+      "title": "CompetitorMatrixCell",
+      "type": "object"
+    },
+    "ConfidenceLevel": {
+      "description": "Assessed confidence in the evidence validity.",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "title": "ConfidenceLevel",
+      "type": "string"
+    },
+    "CredibilityLevel": {
+      "description": "Assessed credibility of the source.",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "unknown"
+      ],
+      "title": "CredibilityLevel",
+      "type": "string"
+    },
+    "EvidenceRecord": {
+      "additionalProperties": false,
+      "description": "Structured Evidence Record binding a claim to provenance.\nSection 6.2 contract.",
+      "properties": {
+        "evidence_id": {
+          "description": "Unique, stable identifier for this evidence item (e.g., 'EV-001')",
+          "title": "Evidence Id",
+          "type": "string"
+        },
+        "question_id": {
+          "description": "ID of the research plan sub-question this evidence addresses",
+          "title": "Question Id",
+          "type": "string"
+        },
+        "claim": {
+          "description": "Atomic, single claim being supported by this evidence record",
+          "title": "Claim",
+          "type": "string"
+        },
+        "claim_type": {
+          "$ref": "#/$defs/ClaimType",
+          "description": "Mandatory epistemic classification: fact, inference, recommendation, uncertainty"
+        },
+        "source_ref": {
+          "description": "ID of the tool result or document this came from (MUST resolve)",
+          "title": "Source Ref",
+          "type": "string"
+        },
+        "source_kind": {
+          "$ref": "#/$defs/SourceKind",
+          "description": "Kind of source that provided the data"
+        },
+        "source_detail": {
+          "description": "Source metadata: title, document id, publication date, or page identifier",
+          "title": "Source Detail",
+          "type": "string"
+        },
+        "credibility": {
+          "$ref": "#/$defs/CredibilityLevel",
+          "default": "medium",
+          "description": "Source credibility assessment"
+        },
+        "recency": {
+          "default": "unknown",
+          "description": "Publication date or recency bucket (e.g., '2025-Q4', '2026')",
+          "title": "Recency",
+          "type": "string"
+        },
+        "corroboration": {
+          "description": "List of other evidence IDs corroborating or referencing this claim",
+          "items": {
+            "type": "string"
+          },
+          "title": "Corroboration",
+          "type": "array"
+        },
+        "confidence": {
+          "$ref": "#/$defs/ConfidenceLevel",
+          "default": "medium",
+          "description": "Confidence level assigned by Evidence Analyst"
+        },
+        "analyst_notes": {
+          "default": "",
+          "description": "Rationale for acceptance, flagging, or conflict notes",
+          "title": "Analyst Notes",
+          "type": "string"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "question_id",
+        "claim",
+        "claim_type",
+        "source_ref",
+        "source_kind",
+        "source_detail"
+      ],
+      "title": "EvidenceRecord",
+      "type": "object"
+    },
+    "Finding": {
+      "additionalProperties": false,
+      "description": "Atomic finding rendered in the intelligence brief.",
+      "properties": {
+        "finding_id": {
+          "description": "Identifier (e.g. 'F-01')",
+          "title": "Finding Id",
+          "type": "string"
+        },
+        "statement": {
+          "description": "The synthesized finding statement",
+          "title": "Statement",
+          "type": "string"
+        },
+        "claim_type": {
+          "$ref": "#/$defs/ClaimType",
+          "description": "Epistemic type: fact, inference, recommendation, uncertainty"
+        },
+        "evidence_ids": {
+          "description": "List of resolving evidence IDs from the evidence appendix",
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "confidence": {
+          "$ref": "#/$defs/ConfidenceLevel",
+          "default": "medium"
+        },
+        "rationale": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Analytical reasoning if inference/recommendation",
+          "title": "Rationale"
+        }
+      },
+      "required": [
+        "finding_id",
+        "statement",
+        "claim_type"
+      ],
+      "title": "Finding",
+      "type": "object"
+    },
+    "MarketOverview": {
+      "additionalProperties": false,
+      "description": "Synthesis of overall market drivers, sizing, and segment boundaries.",
+      "properties": {
+        "category_definition": {
+          "title": "Category Definition",
+          "type": "string"
+        },
+        "key_drivers": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Key Drivers",
+          "type": "array"
+        },
+        "findings": {
+          "items": {
+            "$ref": "#/$defs/Finding"
+          },
+          "title": "Findings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "category_definition"
+      ],
+      "title": "MarketOverview",
+      "type": "object"
+    },
+    "SourceKind": {
+      "description": "Origin kind of the supporting evidence.",
+      "enum": [
+        "retrieved_document",
+        "search_result",
+        "calculation",
+        "model_generated"
+      ],
+      "title": "SourceKind",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Complete Schema-Validated Market Intelligence Report.\nSection 6.1 specification.",
+  "properties": {
+    "report_id": {
+      "description": "Unique run/report identifier",
+      "title": "Report Id",
+      "type": "string"
+    },
+    "generated_at": {
+      "title": "Generated At",
+      "type": "string"
+    },
+    "model_versions": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Mapping of stage name to model used",
+      "title": "Model Versions",
+      "type": "object"
+    },
+    "run_cost": {
+      "description": "Total cumulative USD cost incurred",
+      "title": "Run Cost",
+      "type": "number"
+    },
+    "is_incomplete": {
+      "default": false,
+      "description": "Flag indicating if run terminated early due to caps/budget",
+      "title": "Is Incomplete",
+      "type": "boolean"
+    },
+    "research_objective": {
+      "description": "Normalised client objective statement",
+      "title": "Research Objective",
+      "type": "string"
+    },
+    "assumptions": {
+      "description": "Explicit assumptions recorded during intake",
+      "items": {
+        "type": "string"
+      },
+      "title": "Assumptions",
+      "type": "array"
+    },
+    "unresolved_ambiguity": {
+      "description": "Ambiguities flagged during intake",
+      "items": {
+        "type": "string"
+      },
+      "title": "Unresolved Ambiguity",
+      "type": "array"
+    },
+    "executive_summary": {
+      "description": "Synthesized summary written strictly from body findings",
+      "title": "Executive Summary",
+      "type": "string"
+    },
+    "market_overview": {
+      "$ref": "#/$defs/MarketOverview"
+    },
+    "key_trends": {
+      "items": {
+        "$ref": "#/$defs/Finding"
+      },
+      "title": "Key Trends",
+      "type": "array"
+    },
+    "competitor_analysis": {
+      "$ref": "#/$defs/CompetitorAnalysis"
+    },
+    "opportunities": {
+      "items": {
+        "$ref": "#/$defs/Finding"
+      },
+      "title": "Opportunities",
+      "type": "array"
+    },
+    "risks": {
+      "items": {
+        "$ref": "#/$defs/Finding"
+      },
+      "title": "Risks",
+      "type": "array"
+    },
+    "recommendations": {
+      "items": {
+        "$ref": "#/$defs/Finding"
+      },
+      "title": "Recommendations",
+      "type": "array"
+    },
+    "confidence_level": {
+      "$ref": "#/$defs/ConfidenceLevel"
+    },
+    "confidence_rationale": {
+      "description": "Documented basis: coverage, corroboration, conflicts",
+      "title": "Confidence Rationale",
+      "type": "string"
+    },
+    "limitations_and_gaps": {
+      "description": "Mandatory list of established gaps and unanswerable sub-questions",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Limitations And Gaps",
+      "type": "array"
+    },
+    "sources": {
+      "description": "De-duplicated list of sources cited",
+      "items": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "type": "object"
+      },
+      "title": "Sources",
+      "type": "array"
+    },
+    "evidence_appendix": {
+      "description": "Full catalog of evidence records referenced in findings",
+      "items": {
+        "$ref": "#/$defs/EvidenceRecord"
+      },
+      "title": "Evidence Appendix",
+      "type": "array"
+    },
+    "approval": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ApprovalRecord"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Human approval record (must exist prior to publication)"
+    }
+  },
+  "required": [
+    "report_id",
+    "model_versions",
+    "run_cost",
+    "research_objective",
+    "executive_summary",
+    "market_overview",
+    "competitor_analysis",
+    "confidence_level",
+    "confidence_rationale",
+    "limitations_and_gaps"
+  ],
+  "title": "FinalReport",
+  "type": "object"
+}

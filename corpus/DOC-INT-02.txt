@@ -1,0 +1,17 @@
+DOCUMENT ID: DOC-INT-02
+TITLE: Intercom Fin AI Agent Capabilities & Commercial Model
+VENDOR: Intercom
+SOURCE TYPE: pricing_page
+PUBLISHED: 2026-02-01
+TARGET ENTITY: Intercom Fin AI
+
+COMMERCIAL MODEL AND PRICING:
+Intercom uses a core seat price combined with a consumption-based pricing model for Fin AI:
+- Essential Tier: $39 per seat/month (billed annually). Geared toward early-stage companies and smaller support desks.
+- Advanced Tier: $99 per seat/month. Includes custom workflows, round-robin assignment, and multilingual support.
+- Expert Tier: $139 per seat/month. Advanced permissions, SSO, and real-time workload management.
+
+FIN AI RESOLUTION PRICING & PERFORMANCE:
+- Cost per Resolution: Intercom charges a flat fee of $0.99 per successful automated resolution. A resolution is counted only when the customer explicitly confirms the issue was solved or ceases the conversation without escalating to a human agent.
+- Claimed Resolution Rate: Intercom official documentation asserts that Fin AI achieves a verified 50% automated resolution rate across inbound customer queries without human intervention.
+- Copilot Add-On: Fin AI Copilot for human reps is priced at $35 per agent/month.

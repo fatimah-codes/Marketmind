@@ -1,0 +1,13 @@
+DOCUMENT ID: DOC-FW-01
+TITLE: Freshworks Freshdesk and Freddy AI Copilot Overview
+VENDOR: Freshworks
+SOURCE TYPE: vendor_doc
+PUBLISHED: 2025-12-01
+TARGET ENTITY: Freshworks Freddy AI
+
+OVERVIEW:
+Freshworks integrates its generative Freddy AI across Freshdesk (ticketing) and Freshchat (conversational messaging).
+Freddy AI is offered in three modalities:
+1. Freddy Self-Service: Customer-facing bots for autonomous issue resolution on web and WhatsApp.
+2. Freddy Copilot: In-line agent assistant for text rephrasing, response generation, and automated ticket summary.
+3. Freddy Insights: Manager-level dashboard surfacing operational bottlenecks, churn risks, and agent coaching suggestions.

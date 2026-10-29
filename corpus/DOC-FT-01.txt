@@ -1,0 +1,13 @@
+DOCUMENT ID: DOC-FT-01
+TITLE: Forethought SupportGPT Generative AI Architecture
+VENDOR: Forethought
+SOURCE TYPE: vendor_doc
+PUBLISHED: 2025-07-22
+TARGET ENTITY: Forethought
+
+ARCHITECTURE:
+Forethought powers generative customer service through SupportGPT:
+1. Solve: Autonomous conversational generative AI answering customer queries across chat, email, and widgets.
+2. Triage: Machine learning classification routing tickets, detecting customer sentiment, and predicting churn indicators.
+3. Assist: Agent copilot providing suggested responses and relevant internal knowledge snippets.
+4. Discover: Unsupervised topic clustering surfacing emerging customer pain points and product bugs.

@@ -1,0 +1,196 @@
+{
+  "$defs": {
+    "CandidateTool": {
+      "description": "Approved tools assignable to sub-questions.",
+      "enum": [
+        "search_information",
+        "retrieve_document",
+        "calculate_metric",
+        "compare_companies",
+        "save_research"
+      ],
+      "title": "CandidateTool",
+      "type": "string"
+    },
+    "EvidenceType": {
+      "description": "Categorization of required evidence to answer a sub-question.",
+      "enum": [
+        "vendor_doc",
+        "pricing_table",
+        "press_release",
+        "analyst_note",
+        "independent_benchmark",
+        "customer_review"
+      ],
+      "title": "EvidenceType",
+      "type": "string"
+    },
+    "QuestionPriority": {
+      "description": "Priority level for sequencing research questions.",
+      "enum": [
+        "critical",
+        "high",
+        "medium",
+        "low"
+      ],
+      "title": "QuestionPriority",
+      "type": "string"
+    },
+    "QuestionStatus": {
+      "description": "State machine status of a research sub-question.",
+      "enum": [
+        "open",
+        "answered",
+        "unanswerable"
+      ],
+      "title": "QuestionStatus",
+      "type": "string"
+    },
+    "ResearchObjective": {
+      "additionalProperties": false,
+      "description": "A strategic research objective grouping 2-5 concrete sub-questions.",
+      "properties": {
+        "objective_id": {
+          "description": "Unique objective identifier (e.g. 'OBJ-1')",
+          "title": "Objective Id",
+          "type": "string"
+        },
+        "title": {
+          "description": "Strategic title of the research objective",
+          "maxLength": 150,
+          "minLength": 5,
+          "title": "Title",
+          "type": "string"
+        },
+        "description": {
+          "description": "Scope and business context for this objective",
+          "title": "Description",
+          "type": "string"
+        },
+        "sub_questions": {
+          "description": "Between 2 and 5 specific sub-questions",
+          "items": {
+            "$ref": "#/$defs/SubQuestion"
+          },
+          "maxItems": 5,
+          "minItems": 2,
+          "title": "Sub Questions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "objective_id",
+        "title",
+        "description",
+        "sub_questions"
+      ],
+      "title": "ResearchObjective",
+      "type": "object"
+    },
+    "SubQuestion": {
+      "additionalProperties": false,
+      "description": "An atomic, answerable research question with evidence bounds.",
+      "properties": {
+        "question_id": {
+          "description": "Unique question identifier (e.g. 'Q-101')",
+          "title": "Question Id",
+          "type": "string"
+        },
+        "question_text": {
+          "description": "Specific, bounded question text that a junior analyst could definitively answer",
+          "maxLength": 300,
+          "minLength": 10,
+          "title": "Question Text",
+          "type": "string"
+        },
+        "required_evidence_type": {
+          "$ref": "#/$defs/EvidenceType",
+          "description": "The type of empirical evidence required to answer this question"
+        },
+        "candidate_tools": {
+          "description": "List of candidate tools capable of retrieving or computing this evidence",
+          "items": {
+            "$ref": "#/$defs/CandidateTool"
+          },
+          "minItems": 1,
+          "title": "Candidate Tools",
+          "type": "array"
+        },
+        "priority": {
+          "$ref": "#/$defs/QuestionPriority",
+          "default": "high",
+          "description": "Priority ranking for scheduling research passes"
+        },
+        "status": {
+          "$ref": "#/$defs/QuestionStatus",
+          "default": "open",
+          "description": "Current state: open, answered, or unanswerable"
+        },
+        "resolution_notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Summary of finding or reason marked unanswerable",
+          "title": "Resolution Notes"
+        }
+      },
+      "required": [
+        "question_id",
+        "question_text",
+        "required_evidence_type",
+        "candidate_tools"
+      ],
+      "title": "SubQuestion",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "The complete, validated research plan produced by the Planner.",
+  "properties": {
+    "plan_id": {
+      "description": "Unique plan identifier",
+      "title": "Plan Id",
+      "type": "string"
+    },
+    "target_entity_type": {
+      "description": "The category, market, or entity type under research",
+      "title": "Target Entity Type",
+      "type": "string"
+    },
+    "objectives": {
+      "description": "Between 3 and 6 strategic objectives",
+      "items": {
+        "$ref": "#/$defs/ResearchObjective"
+      },
+      "maxItems": 6,
+      "minItems": 3,
+      "title": "Objectives",
+      "type": "array"
+    },
+    "candidate_tools": {
+      "description": "Universe of tools available to this plan",
+      "items": {
+        "$ref": "#/$defs/CandidateTool"
+      },
+      "title": "Candidate Tools",
+      "type": "array"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "plan_id",
+    "target_entity_type",
+    "objectives"
+  ],
+  "title": "ResearchPlan",
+  "type": "object"
+}

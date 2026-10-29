@@ -1,0 +1,21 @@
+# MarketMind AI - Core Dependencies
+# Python 3.10+ compatible
+
+# Official OpenAI SDK (Verified against official API documentation)
+openai>=1.50.0,<=1.60.0
+
+# Schema Validation and Settings
+pydantic>=2.8.0,<=2.11.0
+pydantic-settings>=2.4.0,<=2.16.0
+jsonschema>=4.20.0,<=4.27.0
+
+# Environment Management
+python-dotenv>=1.0.0,<=1.1.0
+
+# CLI and Formatting
+rich>=13.7.0,<=14.0.0
+streamlit>=1.40.0,<=1.42.0
+
+# Testing and Benchmarking
+pytest>=8.0.0
+pytest-mock>=3.12.0

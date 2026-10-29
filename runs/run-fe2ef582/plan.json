@@ -1,0 +1,138 @@
+{
+  "plan_id": "PLAN-001",
+  "target_entity_type": "AI-powered customer support software",
+  "objectives": [
+    {
+      "objective_id": "OBJ-1",
+      "title": "Analyze Pricing Models",
+      "description": "Investigate the pricing structures of AI-powered customer support software targeted at SMBs in North America for the years 2025-2026.",
+      "sub_questions": [
+        {
+          "question_id": "Q-101",
+          "question_text": "What are the average monthly subscription prices for AI-powered customer support software targeting SMBs?",
+          "required_evidence_type": "pricing_table",
+          "candidate_tools": [
+            "search_information",
+            "retrieve_document"
+          ],
+          "priority": "critical",
+          "status": "answered",
+          "resolution_notes": "Answered with 2 verified evidence records."
+        },
+        {
+          "question_id": "Q-102",
+          "question_text": "Which vendors offer tiered pricing models, and what features are included at each tier?",
+          "required_evidence_type": "vendor_doc",
+          "candidate_tools": [
+            "search_information",
+            "retrieve_document"
+          ],
+          "priority": "high",
+          "status": "unanswerable",
+          "resolution_notes": "Marked unanswerable due to stuck loop repetition."
+        }
+      ]
+    },
+    {
+      "objective_id": "OBJ-2",
+      "title": "Identify Market Leaders",
+      "description": "Determine the leading vendors in the AI-powered customer support software market for SMBs in North America.",
+      "sub_questions": [
+        {
+          "question_id": "Q-201",
+          "question_text": "Which vendors hold the largest market share in the AI-powered customer support software segment for SMBs?",
+          "required_evidence_type": "analyst_note",
+          "candidate_tools": [
+            "search_information",
+            "compare_companies"
+          ],
+          "priority": "critical",
+          "status": "answered",
+          "resolution_notes": "Answered with 2 verified evidence records."
+        },
+        {
+          "question_id": "Q-202",
+          "question_text": "What are the key differentiators among the top three vendors in this market?",
+          "required_evidence_type": "customer_review",
+          "candidate_tools": [
+            "search_information",
+            "compare_companies"
+          ],
+          "priority": "high",
+          "status": "unanswerable",
+          "resolution_notes": "Marked unanswerable due to stuck loop repetition."
+        }
+      ]
+    },
+    {
+      "objective_id": "OBJ-3",
+      "title": "Evaluate Architectural Trade-offs",
+      "description": "Assess the architectural features and trade-offs of leading AI-powered customer support software solutions.",
+      "sub_questions": [
+        {
+          "question_id": "Q-301",
+          "question_text": "What are the primary architectural features offered by the top vendors, and how do they compare in terms of scalability?",
+          "required_evidence_type": "vendor_doc",
+          "candidate_tools": [
+            "search_information",
+            "compare_companies"
+          ],
+          "priority": "medium",
+          "status": "unanswerable",
+          "resolution_notes": "Marked unanswerable due to stuck loop repetition."
+        },
+        {
+          "question_id": "Q-302",
+          "question_text": "What limitations do these solutions have regarding integration with existing systems?",
+          "required_evidence_type": "customer_review",
+          "candidate_tools": [
+            "search_information",
+            "retrieve_document"
+          ],
+          "priority": "medium",
+          "status": "open",
+          "resolution_notes": null
+        }
+      ]
+    },
+    {
+      "objective_id": "OBJ-4",
+      "title": "Identify Gaps in Current Offerings",
+      "description": "Explore potential gaps in the current offerings of AI-powered customer support software for SMBs.",
+      "sub_questions": [
+        {
+          "question_id": "Q-401",
+          "question_text": "What features are frequently requested by customers but not currently offered by leading vendors?",
+          "required_evidence_type": "customer_review",
+          "candidate_tools": [
+            "search_information",
+            "retrieve_document"
+          ],
+          "priority": "high",
+          "status": "answered",
+          "resolution_notes": "Answered with 1 verified evidence records."
+        },
+        {
+          "question_id": "Q-402",
+          "question_text": "What are the common pain points reported by users of existing AI-powered customer support software?",
+          "required_evidence_type": "customer_review",
+          "candidate_tools": [
+            "search_information",
+            "retrieve_document"
+          ],
+          "priority": "high",
+          "status": "answered",
+          "resolution_notes": "Answered with 2 verified evidence records."
+        }
+      ]
+    }
+  ],
+  "candidate_tools": [
+    "search_information",
+    "retrieve_document",
+    "calculate_metric",
+    "compare_companies",
+    "save_research"
+  ],
+  "created_at": "2026-10-29T20:11:40.435309+00:00"
+}

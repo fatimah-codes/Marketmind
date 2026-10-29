@@ -1,0 +1,52 @@
+# Environment secrets
+.env
+.env.local
+*.key
+*.pem
+
+# Run artifacts and outputs (must be generated fresh)
+runs/
+evaluation/results/eval_runs/
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Archives
+*.zip
+*.tar.gz
+
+# IDE and OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

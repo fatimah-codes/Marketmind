@@ -1,0 +1,12 @@
+DOCUMENT ID: DOC-INT-01
+TITLE: Intercom Platform and Customer Service Copilot Guide
+VENDOR: Intercom
+SOURCE TYPE: vendor_doc
+PUBLISHED: 2025-10-05
+TARGET ENTITY: Intercom Fin AI
+
+PLATFORM OVERVIEW:
+Intercom provides an AI-first customer service platform designed around the Fin AI engine. The platform consists of:
+1. Fin AI Agent: An autonomous bot capable of answering complex inquiries directly from synced knowledge base content, public URLs, and internal docs.
+2. Fin AI Copilot: An in-inbox assistant for human agents that suggests replies, summarizes multi-turn conversations, and composes outbound updates.
+3. Omnichannel Messenger: In-app chat, mobile SDK, email, and social integrations (WhatsApp, Facebook Messenger).

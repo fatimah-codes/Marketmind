@@ -1,0 +1,13 @@
+DOCUMENT ID: DOC-FT-02
+TITLE: Forethought Enterprise Pricing & Triage Metrics
+VENDOR: Forethought
+SOURCE TYPE: pricing_page
+PUBLISHED: 2025-09-11
+TARGET ENTITY: Forethought
+
+PRICING & PACKAGING:
+Forethought positions as an enterprise overlay for Zendesk, Salesforce, and Freshdesk:
+- Triage Only: $20,000 annual base platform fee (automated routing and tagging).
+- Complete Suite (Solve + Triage + Assist): Starting at $48,000 annual platform fee.
+- Per-Resolution Model: Billed at $0.80 per resolved interaction for Solve tier.
+- Verified Benchmark: 38% average autonomous deflection rate reported across B2B SaaS deployments.

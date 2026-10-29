@@ -1,0 +1,13 @@
+DOCUMENT ID: DOC-ADA-02
+TITLE: Ada Commercial Pricing Model & Enterprise Commitments
+VENDOR: Ada
+SOURCE TYPE: pricing_page
+PUBLISHED: 2025-12-10
+TARGET ENTITY: Ada Support
+
+PRICING MODEL:
+Ada operates primarily on an outcome-based and volume-tiered resolution model rather than traditional agent seat licenses:
+- Starter Package: $30,000 annual baseline platform fee, including up to 25,000 automated resolutions annually (~$1.20 per resolution effective).
+- Growth Package: $60,000 annual platform fee, including 60,000 automated resolutions (~$1.00 per resolution effective).
+- Enterprise Custom: Custom quotation with dedicated customer success manager, custom LLM fine-tuning, and volume discounts dropping resolution costs to $0.70-$0.85 per resolution at >200,000 annual volumes.
+- Channel Surcharges: Native Voice AI resolution carries a $0.20 per-minute telephony carrier surcharge.

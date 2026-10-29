@@ -1,0 +1,19 @@
+DOCUMENT ID: DOC-ZD-02
+TITLE: Zendesk Official Pricing and Add-On Tiers
+VENDOR: Zendesk
+SOURCE TYPE: pricing_page
+PUBLISHED: 2026-01-10
+TARGET ENTITY: Zendesk AI
+
+PRICING STRUCTURE:
+Zendesk operates on a hybrid per-seat and add-on commercial model:
+- Suite Team (Entry Tier): $55 per agent/month (billed annually). Includes basic ticketing, email/chat channels, standard pre-built bots, and foundational intent detection.
+- Suite Growth: $89 per agent/month (billed annually). Includes multiple ticket forms, light agents, and self-service customer portals.
+- Suite Professional: $115 per agent/month (billed annually). Full business hours, custom routing, and advanced reporting.
+- Suite Enterprise: $169 per agent/month (billed annually). Sandbox environments, custom agent roles, and dynamic ticket workspaces.
+
+ADVANCED AI ADD-ON:
+- Pricing: $50 per agent/month flat add-on fee across Suite Professional and Enterprise tiers.
+- Included in Advanced AI: Autonomous generative bot responses, intent and sentiment suggestions on agent ticket views, intelligent triage rules, and macro suggestions.
+- Enterprise Custom Contract: For organizations over 500 agents, volume discounting applies, scaling down to $35 per agent/month for the Advanced AI tier. Minimum annual commitment of $150,000 required.
+- High Volume Deflection Fees: No per-resolution fee is charged for standard native automated bot deflections up to 10,000 deflections/month. Overage is billed at $0.15 per automated deflection.

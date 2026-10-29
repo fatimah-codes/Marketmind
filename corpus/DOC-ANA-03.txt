@@ -1,0 +1,20 @@
+DOCUMENT ID: DOC-ANA-03
+TITLE: TechOps Field Benchmark: Real-world AI Resolution Metrics and Cost Analysis
+VENDOR: TechOps Advisory
+SOURCE TYPE: analyst_report
+PUBLISHED: 2026-02-10
+TARGET ENTITY: Intercom Fin AI / Multi-vendor Benchmark
+
+EXECUTIVE SUMMARY & INDEPENDENT TEST RESULTS:
+TechOps conducted a rigorous 90-day double-blind evaluation of generative customer support agents across 35,000 live customer interactions in SaaS and fintech environments.
+
+CONTRADICTION ANALYSIS - INTERCOM FIN AI:
+- Official Vendor Marketing Claim (DOC-INT-02): Intercom advertises a 50% automated resolution rate at a fixed consumption cost of $0.99 per resolution.
+- Field Empirical Measurement: In controlled testing against 12,000 real-world inquiries, Fin AI achieved an effective autonomous resolution rate of only 31%. Furthermore, when accounting for escalated re-opens and multi-turn channel transitions, the effective cost per resolved issue was calculated at $1.50 per resolution.
+- Analytical Note: While Fin AI displays high conversational fluency, customers frequently required human escalation for multi-part billing disputes and authentication tasks.
+
+CROSS-VENDOR RESOLUTION RATES (MEASURED):
+- Zendesk Advanced AI: 32% measured deflection rate.
+- Ada Support: 41% measured deflection rate.
+- Forethought: 36% measured deflection rate.
+- Freshworks Freddy: 27% measured deflection rate.

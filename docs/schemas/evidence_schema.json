@@ -1,0 +1,125 @@
+{
+  "$defs": {
+    "ClaimType": {
+      "description": "Epistemic typing for claims. Enforces epistemic boundaries.\nPrevents inference laundering.",
+      "enum": [
+        "fact",
+        "inference",
+        "recommendation",
+        "uncertainty"
+      ],
+      "title": "ClaimType",
+      "type": "string"
+    },
+    "ConfidenceLevel": {
+      "description": "Assessed confidence in the evidence validity.",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "title": "ConfidenceLevel",
+      "type": "string"
+    },
+    "CredibilityLevel": {
+      "description": "Assessed credibility of the source.",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "unknown"
+      ],
+      "title": "CredibilityLevel",
+      "type": "string"
+    },
+    "SourceKind": {
+      "description": "Origin kind of the supporting evidence.",
+      "enum": [
+        "retrieved_document",
+        "search_result",
+        "calculation",
+        "model_generated"
+      ],
+      "title": "SourceKind",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Structured Evidence Record binding a claim to provenance.\nSection 6.2 contract.",
+  "properties": {
+    "evidence_id": {
+      "description": "Unique, stable identifier for this evidence item (e.g., 'EV-001')",
+      "title": "Evidence Id",
+      "type": "string"
+    },
+    "question_id": {
+      "description": "ID of the research plan sub-question this evidence addresses",
+      "title": "Question Id",
+      "type": "string"
+    },
+    "claim": {
+      "description": "Atomic, single claim being supported by this evidence record",
+      "title": "Claim",
+      "type": "string"
+    },
+    "claim_type": {
+      "$ref": "#/$defs/ClaimType",
+      "description": "Mandatory epistemic classification: fact, inference, recommendation, uncertainty"
+    },
+    "source_ref": {
+      "description": "ID of the tool result or document this came from (MUST resolve)",
+      "title": "Source Ref",
+      "type": "string"
+    },
+    "source_kind": {
+      "$ref": "#/$defs/SourceKind",
+      "description": "Kind of source that provided the data"
+    },
+    "source_detail": {
+      "description": "Source metadata: title, document id, publication date, or page identifier",
+      "title": "Source Detail",
+      "type": "string"
+    },
+    "credibility": {
+      "$ref": "#/$defs/CredibilityLevel",
+      "default": "medium",
+      "description": "Source credibility assessment"
+    },
+    "recency": {
+      "default": "unknown",
+      "description": "Publication date or recency bucket (e.g., '2025-Q4', '2026')",
+      "title": "Recency",
+      "type": "string"
+    },
+    "corroboration": {
+      "description": "List of other evidence IDs corroborating or referencing this claim",
+      "items": {
+        "type": "string"
+      },
+      "title": "Corroboration",
+      "type": "array"
+    },
+    "confidence": {
+      "$ref": "#/$defs/ConfidenceLevel",
+      "default": "medium",
+      "description": "Confidence level assigned by Evidence Analyst"
+    },
+    "analyst_notes": {
+      "default": "",
+      "description": "Rationale for acceptance, flagging, or conflict notes",
+      "title": "Analyst Notes",
+      "type": "string"
+    }
+  },
+  "required": [
+    "evidence_id",
+    "question_id",
+    "claim",
+    "claim_type",
+    "source_ref",
+    "source_kind",
+    "source_detail"
+  ],
+  "title": "EvidenceRecord",
+  "type": "object"
+}

@@ -1,0 +1,19 @@
+DOCUMENT ID: DOC-ANA-01
+TITLE: Gartner Magic Quadrant Summary: Customer Service AI Platforms
+VENDOR: Industry Analyst
+SOURCE TYPE: analyst_report
+PUBLISHED: 2026-01-28
+TARGET ENTITY: Market Overview
+
+ANALYST ASSESSMENT:
+The customer service AI platform landscape has evolved from scripted decision trees into autonomous generative agent architectures. 
+
+LEADERS:
+1. Salesforce: Dominates high-end enterprise deployments with massive CRM data gravity, but faces adoption hurdles due to high total cost of ownership and complex consumption credit models.
+2. Zendesk: Retains largest mid-market and commercial footprint; the Advanced AI add-on has achieved rapid uptake due to simplicity of activation and fixed per-seat billing predictability.
+3. Ada: Recognized for pure-play autonomous deflection excellence across multi-channel voice and chat.
+
+CHALLENGERS & VISIONARIES:
+- Intercom: Pioneer in consumer-grade messaging UX; Fin AI is praised for conversational nuance, though consumption billing can produce billing surprises for unforecasted spikes.
+- Freshworks: Fastest growing lower mid-market option offering accessible entry pricing and rapid time-to-value.
+- Forethought: Strongest in embedding into existing legacy helpdesks (ServiceNow, Salesforce) with automated triage.
